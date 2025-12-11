@@ -1,3 +1,52 @@
+## Planned functions
+```py
+# File: lib/music_library.py
+
+class MusicLibrary:
+    # Public properties:
+    #   tracks: a list of strings representing tracks
+
+    def __init__(self):
+        pass
+
+    def add(self, track):
+        # Parameters:
+        #   track: an instance of Track
+        # Returns:
+        #   Nothing
+        pass
+
+    def search_by_title(self, keyword):
+        # Parameters:
+        #   keyword: a string
+        # Returns:
+        #   a list of Track instances with titles that include the keyword
+        pass
+
+
+# File: lib/track.py
+
+class Track:
+    # Public properties:
+    #   title: a string
+    #   artist: a string
+
+    def __init__(self, title, artist):
+        # Parameters:
+        #   title: a string
+        #   artist: a string
+        # Side-effects:
+        #   Sets the title and artist properties
+        pass
+
+    def format(self):
+        # Returns:
+        #   a string in the format "TITLE by ARTIST"
+        pass
+```
+
+
+## Test plan
 ```py
 """
 When we add two tracks
@@ -52,3 +101,4 @@ Given a track with a title and artist
 """
 track = Track("Higher Place", "Malevolence")
 track.format() # => "Higher Place by Malevolence"
+```
